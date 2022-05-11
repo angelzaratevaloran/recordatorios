@@ -1,0 +1,1 @@
+php artisan Email:aniversarios >> logApp\logAniv.txt

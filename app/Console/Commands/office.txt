@@ -1,0 +1,5 @@
+smtp.office365.com
+587
+tls
+pritomkucse@office365.com
+xxxxx

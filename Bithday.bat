@@ -1,0 +1,1 @@
+php artisan Email:birthday >> logApp\logCumple.txt

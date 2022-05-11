@@ -1,0 +1,5 @@
+smtp.gmail.com
+587
+tls
+angel.zarate.hdz@gmail.com
+bsyhachmbovavwpp

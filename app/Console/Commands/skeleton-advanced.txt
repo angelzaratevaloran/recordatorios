@@ -1,0 +1,54 @@
+From: __FROM__
+To: __TO__
+Subject: __SUBJECT__
+Thread-Topic: __TOPIC__
+Accept-Language: en-US
+Content-Language: en-US
+Content-Type: multipart/alternative; boundary="__BOUNDARY__"
+Disposition-Notification-To: <__FROM__>
+X-Confirm-Reading-To: <__FROM__>
+Return-Receipt-To: <__FROM__>
+Sensitivity: company-confidential
+MIME-Version: 1.0
+X-Priority: 2
+X-MSMail-Priority: High
+Priority: Urgent
+Importance: High
+
+--__BOUNDARY__
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+__HTML__
+
+--__BOUNDARY__
+Content-Type: text/calendar; charset="utf-8"; method=REQUEST
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:__DTSTART__
+DTEND:__DTEND____REPEAT_RULE__
+DTSTAMP:__DTSTAMP__
+UID:PKM__BOUNDARY__
+ORGANIZER;CN=__ORGANIZER__:mailto:__ORGANIZER__
+__ATTENDEE__CLASS:PRIVATE
+DESCRIPTION:__DESCRIPTION__
+LOCATION:__LOCATION__
+SEQUENCE:0
+STATUS:__EVENT_STATUS__
+SUMMARY:__SUMMARY__
+TRANSP:OPAQUE
+PRIORITY:5
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER:-P0DT0H10M0S
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+--__BOUNDARY__--
